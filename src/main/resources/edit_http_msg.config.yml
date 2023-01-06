@@ -1,0 +1,14 @@
+EXTENSION_NAME: "edit_http_msg"
+EXTENSION_VERSION: "0.0.2"
+WHITE_HOST_REGX: "testphp.vulnweb.com"
+BLACK_HOST_REGX: ""
+WHITE_PATH_REGX: ""
+BLACK_PATH_REGX: "static|surface-src-main|admin.php"
+WHITE_SUFFIX_REGX: ""
+BLACK_SUFFIX_REGX: "mp3|js"
+REPLACE_HEAD_MATCH: "HTTP/1.1"
+REPLACE_HEAD_LINE: true
+REPLACE_BODY_LINE: false
+EXACT_REPLACE_RULE: "/-> /-> /admin.php"
+ROUGH_REPLACE_RULE: " /-> /admin.php/"
+RULE_SPLIT_SYMBOL: "->"
